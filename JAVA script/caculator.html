@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function num(x){
+			document.getElementById("re").value +=x;
+		}
+		function cle(){
+			document.getElementById("re").value ="";
+		}
+		function operate(x)
+		{
+			document.getElementById("re").value ="";
+		}
+		
+	</script>
+</head>
+<body>
+	<div>
+				<input type="text" id="re"><br>
+				<button onclick="num(1)" id="a" style="width:73px">1</button>
+				<button onclick="num(2)" id="b" style="width:73px">2</button>
+				<button onclick="num(3)" id="c" style="width:73px">3</button>
+				<button onclick="operate(1)" id="d" style="width:73px">+</button><br>
+
+				<button onclick="num(4)" id="e" style="width:73px">4</button>
+				<button onclick="num(5)" id="f" style="width:73px">5</button>
+				<button onclick="num(6)" id="g" style="width:73px">6</button>
+				<button onclick="operate(2)" id="h" style="width:73px">-</button><br>
+
+				<button onclick="num(7)" id="i" style="width:73px">7</button>
+				<button onclick="num(8)" id="j" style="width:73px">8</button>
+				<button onclick="num(9)" id="k" style="width:73px">9</button>
+				<button onclick="operate(3)" id="l" style="width:73px">*</button><br>
+
+				<button onclick="equ()" id="m" style="width:73px">=</button>
+				<button onclick="cle()" id="n" style="width:73px">C</button>
+				<button onclick="num(0)" id="o" style="width:73px">0</button>
+				<button onclick="operate(4)" id="p" style="width:73px">/</button>
+	</div>
+
+</body>
+</html>
