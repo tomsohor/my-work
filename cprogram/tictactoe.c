@@ -16,7 +16,16 @@ int main(){
 
 void game(){
 	char a;
-	printf("PLay or not ? (y/n)\n");
+	sqr[1] = '1';
+	sqr[2] = '2';
+	sqr[3] = '3';
+	sqr[4] = '4';
+	sqr[5] = '5';
+	sqr[6] = '6';
+	sqr[7] = '7';
+	sqr[8] = '8';
+	sqr[9] = '9';
+	printf("PLay or Leave ? (y/l)\n");
 	scanf(" %c", &a);
 	switch (a){
 		case 'y':
@@ -24,11 +33,11 @@ void game(){
 			board();
 			choice();
 			break;
-		case 'n':
+		case 'l':
 			printf("bye bye");
 			break;
 		default:
-			printf("please input the correct answer\n");
+			printf("Please input the correct answer\n");
 			game();
 	}
 }
@@ -36,13 +45,13 @@ void game(){
 void board(){
 	printf("\n\t\tTicTacToe\n");
 	printf(" Player1 (X)\t - \tPlayer2 (O)\n");
-	printf(" ___________ \n");
-	printf("| %c | %c | %c |\n",sqr[1],sqr[2],sqr[3]);
-	printf("|___|___|___|\n");
-	printf("| %c | %c | %c |\n",sqr[4],sqr[5],sqr[6]);
-	printf("|___|___|___|\n");
-	printf("| %c | %c | %c |\n",sqr[7],sqr[8],sqr[9]);
-	printf("|___|___|___|\n");
+	printf("\t ___________ \n");
+	printf("\t| %c | %c | %c |\n",sqr[1],sqr[2],sqr[3]);
+	printf("\t|___|___|___|\n");
+	printf("\t| %c | %c | %c |\n",sqr[4],sqr[5],sqr[6]);
+	printf("\t|___|___|___|\n");
+	printf("\t| %c | %c | %c |\n",sqr[7],sqr[8],sqr[9]);
+	printf("\t|___|___|___|\n");
 	system("color E");
 	system("color 1E");
 }
@@ -85,7 +94,7 @@ void choice(){
 	}while(x==0);
 	
 	if(x == 1){
-		printf("\n%c is the winner",turn);
+		printf("\n%c is the winner \n",turn);
 		game();
 	}
 	else if(x == 2){
